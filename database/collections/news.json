@@ -1,0 +1,12 @@
+{
+    "1":{
+        "title":"lorem IPSUM",
+        "Content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a sem pulvinar, gravida libero a, gravida metus. Suspendisse blandit a lorem ac sagittis. Nulla tristique risus non vehicula finibus. Fusce in risus dolor. Quisque ornare dapibus mauris, sed facilisis lacus luctus at. Aliquam molestie, lacus eu tincidunt fringilla, quam dolor vestibulum odio, eu vulputate ipsum orci et ante. Integer viverra maximus justo, sit amet congue sem aliquam non. Quisque id gravida nunc. In hac habitasse platea dictumst. /n Etiam viverra velit quis tortor pharetra, efficitur iaculis eros viverra. Phasellus volutpat ut sem eget commodo. Integer vitae dignissim purus, vitae consequat risus. Pellentesque odio justo, interdum quis viverra sit amet, posuere et mi.",
+        "cover":"./images/covers/cover1.png"
+    },
+    "2":{
+        "title":"cRazy news",
+        "Content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "cover":"./images/covers/cover2.png"
+    }
+}

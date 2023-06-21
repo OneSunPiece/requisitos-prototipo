@@ -1,3 +1,3 @@
 # requisitos-prototipo
 
-Papi, abra index.html y no mueva la estructura de la carpeta
+abrir index.html y no mover las estructuras de las carpetas

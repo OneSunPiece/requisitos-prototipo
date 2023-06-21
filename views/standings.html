@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>standings</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <center>
+        <h1>Standings page</h1>
+        <div id="phone">
+
+            <div class="navbar">
+                <img src="../images/logo.png" alt="Logo">
+            </div>
+
+
+
+            <div class="content">
+                <div class="filter">
+                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="19" height="19" fill="url(#pattern0)"/>
+                        <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_2_33" transform="scale(0.015625)"/>
+                        </pattern>
+                        <image id="image0_2_33" width="64" height="64" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFIUlEQVR4nO1baYgcVRB+O8Y7HogiaHQ1TtdX3a4bdXanatbg4EkUEURivBUVQYzoElFUlOAP8T5BwQuyIQoJKoo/BEH8IXgfBI9fURQVjEaMRhOPjVI9szO9szPu9GzPsTPzQcGw29Ov6uvqenW8ca7JWLw4sx+xPmuSTmf3ne36IMgvBOQpQJ8cHh7e2813EOs4WP81IdYbZrsekOvL12evdfMdgKyeMsg+J319xwN9AqTvAejlV4D87CWloEZycc8R4JxLmeFF41O9SEAs9AlAl3gAMLYPIEcwS4Y5ezpz7gJmudoEyN5ILDebAHqRc26gBgFPB4GmBwfze7hORDq9bHdgdKRglDwIyIuAfAzWX0pG1CMFEmYSME1ks92bWF6xtTzWS4lkOJPJ7Noyg4Mg2M3z9VRifRiQjwj6VyxDaxJQdvXaBFQXgv5JkA9NJ9PNdEza7gFzYWLdQCy/JmJwggRUka1gWc8sp0VfrYYAjI6A5b05KjQJ6EQo9rnqU5S7ymvq3cmRK+8y6/ENGU+k54FlRwJPd03EuIka121iHiUTgnydrIfJDo/1nFjGH3X0yGFg2d6B7t2QEHTb0JAcXDcBgF6XmAIdQEBBj9wVdRPArLckt7BOlAhgXdsuAph1ZRwCVia4+GTR8LW1gmArxPKGGK+AnN02V20WAX7uxLoJCAJNt1vhhGVnOr30IBcHxPJd6QaQ1cSyLrGdoakifxDkOfL1prL++lks4w3E8kzlXp7JZPYikjMAeYhY37c0tN0Gl1NhedR0Mx1NV0AfKF3Der+LCyB7UmSRbUGgB1ReY4VI2s8dR75eSSz3FtJl/YAgW5I3VLaE9y6scR+xXmVZXrXc3+YP0YLM87JLYhPgnBsglo0RBR6L82UbagTBCYd7wdixYQHly4qpcthmBVPlcFl0vPR/X1aQnzvFvmv3iDsgCSvTst5vukbhsZwfudHfgB7jOhyep1mw/FPSm7Inz+V+A2B5KxpMrNHhOhTmKdO9Vl+Y803TQTawyBoJiC/V09xsNSwWEMtrkbjxo+fpoYncnK3jEw1KkDX5fH6B6xykAH0+ouMkc+6sRFcg1kemRWXWlxct0j1dmzG4JL8/oK9WPKBVzVhrgFieqNiePm+44ZAAgDGYDhF9dja7k5ya4QmWDEFua6U3WLAD9M5obLJdilkva4kCbHs19PeKFPRb+3szY4MlXlbV2VoVa/9ApMtcK0GUPZJY36iSmn4fekmCOYNF8+IM4Zsquf/62IVOgkjZiQ6C/lQjhf3E6gYrr+s5HjMFyzU8X84E5B5rbNboI3wJyLmuExAE+YWFozCVrjlNtnqe+NXyjGJuv4Ggbxer0JqNE4J+aoPWDtuGy5MiC0SFbWlm6Uwst7sKEOtXdRRCP1tHqbi3z63X3yoE4Wmv3HJA34nszzO2KHuiNY2HvG4DjpaOv1o97Q0DHMk1Nh9k1jxYH292QjOfDkmtcvMd6BMgfQ9A/xXQfgxAPwhqfxdAL26DxHpHJBXeSJQ5sLcIIFkattTL5esXzLmhniHAYFOcsF1VJmG7nQuqNm3qSgIMgFxeWSFaVykcukIvnGpqdC0BBjs1aucL/7/slc1dS0ABy3ex8zrhlGm2PgDruOtiDAC5sXCMHXpFeZ5X9Ibf7Cis6xXk8/kFwNghRLlRG3DawKPdOvXRRxNhx2LD1jbrJt8Xz/UaAL11KuDZwUzXa0C3/DSmUfQ8ARTz94TdiFSc3xM2C/8B/hUprYK2XjgAAAAASUVORK5CYII="/>
+                        </defs>
+                        </svg>
+                    <button class="filter-orange">General</button>
+                    <button class="filter-violet">Year</button>
+                </div>
+
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">Nac.</th>
+                        <th scope="col">Score</th>
+                        <th scope="col">More</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                      <tr>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>@mdo</td>
+                        <td><a href=""><img src="../images/icons/more.png"></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+
+            <div class="footer">
+                <a href="./news.html" ><img src="../images/icons/homeButton.png" alt="home news"></a>
+                <a href="./standings.html" ><img src="../images/icons/standingButton.png" alt="standings"></a>
+                <a href="./matchs.html" ><img src="../images/icons/datesButton.png" alt="matchs"></a>
+                <a href="./shop.html" ><img src="../images/icons/shopButton.png" alt="shop"></a>
+            </div>
+        </div>
+    </center>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

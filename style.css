@@ -1,0 +1,103 @@
+body {
+
+    background-color: lightgray;
+}
+
+div#phone{
+    min-width: 400px;
+    max-width: 400px;
+    max-height: 860px;
+    min-height: 860px;
+    background-color: whitesmoke;
+    overflow-y: auto; /* Permite el desplazamiento si el contenido es más largo que la altura */
+}
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #1e1e1e;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para la imagen */
+.navbar img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+/* Estilos para los enlaces */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+div.footer{
+    background-color: #1e1e1e;
+    color:white;
+
+    padding: 10px;
+    display: flex;
+    align-items: center;
+
+    position: sticky;
+    bottom: 0px; /* Ajusta la posición sticky según tus necesidades */
+}
+
+div.filter{
+    padding: 5px;
+}
+
+button.filter-orange{
+    background-color: #ff8b2e;
+    color:black;
+    border-radius: 15px;
+    border: None;
+    font-weight: bold;
+    padding: 5px;
+}
+
+button.filter-violet{
+    background-color: #c89aff;
+    color:black;
+    border-radius: 15px;
+    border: None;
+    font-weight: bold;
+    padding: 5px;
+}
+
+
+/* Estilos para la tabla */
+table {
+    background-color: #aaa;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Estilos para las celdas de encabezado */
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+    padding: 8px;
+}
+
+/* Estilos para las celdas de datos */
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+div.footer{
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+}
+div#phone{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+div.card-body{
+    padding: 1rem;
+}
