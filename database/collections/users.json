@@ -1,0 +1,14 @@
+{
+    "1":{
+        "user":"Admin",
+        "password":"piratesKing"
+    },
+    "2":{
+        "user":"Zoro",
+        "password":"sword"
+    },
+    "3":{
+        "user":"Luffy",
+        "password":"piratesKing"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "1":{
+        "event":"Championship",
+        "city":"Medellin",
+        "date":"30/06/2024",
+        "urlWatch":"youtube.com",
+        "urlBuy":"https://ticketexpress.com.co/event/partido-de-las-leyendas-bogota/"
+    },
+    "2":{
+        "event":"Championship",
+        "city":"Cartagena",
+        "date":"30/07/2024",
+        "urlWatch":"youtube.com",
+        "urlBuy":"https://ticketexpress.com.co/event/partido-de-las-leyendas-bogota/"
+    }
+}
