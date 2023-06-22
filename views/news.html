@@ -21,27 +21,11 @@
                 <img src="../images/logo.png" alt="Logo">
             </div>
 
-            <div class="content">
+            <div id="content">
                 <h1>News</h1>
 
                 <!--Cards-->
-                <div class="card" style="width: 18rem;">
-                    <img src="../images/covers/cover1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="mainNews.html" class="btn btn-primary">Read more</a>
-                    </div>
-                  </div>
 
-                  <div class="card" style="width: 18rem;">
-                    <img src="../images/covers/cover1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="mainNews.html" class="btn btn-primary">Read more</a>
-                    </div>
-                  </div>
                   <!--End Cards-->
 
             </div>
@@ -55,5 +39,54 @@
         </div>
     </center>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Define the data for the cards
+        const cardData = [
+        { id:0, title: "Card1", content: "This is the content of card 1.",cover:"../images/covers/cover1.jpg" },
+        { id:1, title: "Card2", content: "This is the content of card 2.",cover:"../images/covers/cover1.jpg" },
+        { id:2, title: "Card3", content: "This is the content of card 3.",cover:"../images/covers/cover1.jpg" } 
+        ];
+
+        // Get the card container element
+        const cardContainer = document.getElementById("content");
+
+        // Loop through the card data and generate the cards dynamically
+        for (let i = 0; i < cardData.length; i++) {
+            // Create a new div element for each card
+            const card = document.createElement("div");
+            card.style.width="18rem"
+            card.classList.add("card");
+
+            const cardBody =document.createElement("div");
+            cardBody.classList.add("card-body")
+
+
+            // Set the title and content of the card
+            const cover = document.createElement("img");
+            cover.classList.add("card-img-top")
+            cover.src = cardData[i].cover;
+
+            const title = document.createElement("h5");
+            title.textContent = cardData[i].title;
+            const content = document.createElement("p");
+            content.textContent = cardData[i].content;
+            const button = document.createElement("a");
+            button.href="mainNews.html#"+cardData[i].id;
+            button.innerText="Read More"
+            button.classList.add("btn","btn-secondary")
+            
+            // Append the title and content to the card
+            card.appendChild(cover);
+            card.appendChild(cardBody);
+            cardBody.appendChild(title);
+            cardBody.appendChild(content);
+            cardBody.appendChild(button);
+
+            // Append the card to the card container
+            cardContainer.appendChild(card);
+        }
+    });
+    </script>
 </body>
 </html>

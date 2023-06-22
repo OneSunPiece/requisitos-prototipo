@@ -21,8 +21,7 @@
                 <img src="../images/logo.png" alt="Logo">
             </div>
 
-            <div class="content">
-                <h1>Main News</h1>
+            <div id="content">
 
                 <!--Cards-->
 
@@ -38,5 +37,54 @@
         </div>
     </center>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Define the data for the cards
+            const cardData = [
+            { id:0 , title: "Card1", content: "This is the content of card 1.",cover:"../images/covers/cover1.jpg", upvotes: 2},
+            { id:1 , title: "Card2", content: "This is the content of card 2.",cover:"../images/covers/cover1.jpg", upvotes: 4 },
+            { id:2 , title: "Card3", content: "This is the content of card 3.",cover:"../images/covers/cover1.jpg", upvotes: 7} 
+            ];
+    
+            // Get the card container element
+            const cardContainer = document.getElementById("content");
+            const url = window.location.href;
+            const fragmento = parseInt(url.split("#")[1]);
+
+            // Create the card
+            const card = document.createElement("div");
+            card.style.width="18rem"
+            card.classList.add("card");
+
+            const cardBody =document.createElement("div");
+            cardBody.classList.add("card-body")
+
+            // Set the title and content of the card
+            const cover = document.createElement("img");
+            cover.classList.add("card-img-top")
+            cover.src = cardData[fragmento].cover;
+
+            const title = document.createElement("h5");
+            title.textContent = cardData[fragmento].title;
+
+            const content = document.createElement("p");
+            content.textContent = cardData[fragmento].content;
+
+            const button = document.createElement("a");
+            button.href="#"+fragmento;
+            button.innerText=cardData[fragmento].upvotes
+            button.classList.add("btn","btn-primary")
+            
+            // Append the title and content to the card
+            card.appendChild(cover);
+            card.appendChild(cardBody);
+            cardBody.appendChild(title);
+            cardBody.appendChild(content);
+            cardBody.appendChild(button);
+            // Append the card to the card container
+            cardContainer.appendChild(card);
+
+        });
+        </script>
 </body>
 </html>
