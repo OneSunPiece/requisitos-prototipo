@@ -15,8 +15,8 @@ fs.readFile('./database/collections/news.json', 'utf8', (err, data) => {
   }
 });
 */
-
-function extracElement(filePath, element,callback) {
+//Experimental
+function extracList(filePath, callback) {
     fs.readFile(filePath, 'utf8', (err, data) => {
       if (err) {
         callback(err, null);
@@ -25,11 +25,11 @@ function extracElement(filePath, element,callback) {
   
       try {
         const jsonData = JSON.parse(data);
-        callback(null, jsonData[element]);
+        callback(null, jsonData);
       } catch (error) {
         callback(error, null);
       }
     });
   }
 
-module.exports = extracElement;
+module.exports = extracList;

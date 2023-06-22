@@ -1,5 +1,6 @@
 const fs = require('fs');
 /*
+// Funcional
 fs.readFile('./database/collections/news.json', 'utf8', (err, data) => {
   if (err) {
     console.error('Error reading JSON file:', err);
@@ -15,8 +16,8 @@ fs.readFile('./database/collections/news.json', 'utf8', (err, data) => {
   }
 });
 */
-
-function extracList(filePath, callback) {
+//Experimental
+function extracElement(filePath, element,callback) {
     fs.readFile(filePath, 'utf8', (err, data) => {
       if (err) {
         callback(err, null);
@@ -25,11 +26,11 @@ function extracList(filePath, callback) {
   
       try {
         const jsonData = JSON.parse(data);
-        callback(null, jsonData);
+        callback(null, jsonData[element]);
       } catch (error) {
         callback(error, null);
       }
     });
   }
 
-module.exports = extracList;
+module.exports = extracElement;
